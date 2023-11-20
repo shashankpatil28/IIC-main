@@ -4,6 +4,7 @@ import Intro from '../components/introPage/intro'
 import About from '../components/AboutPage/about'
 import Footer from '../components/footer/footer'
 import Act from '../components/activityPage/activity'
+import Link from 'next/link'
 
 export default function Home() {
   return (

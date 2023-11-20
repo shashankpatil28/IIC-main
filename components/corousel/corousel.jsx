@@ -20,7 +20,7 @@ const Corousel = () => {
   //   margin: "0 auto",
   // };
   return (
-      <div className='w-full h-full'>
+      <div className='w-full h-full '>
         <ImageSlider slides={slides} className='w-full'/>
       </div>
   )

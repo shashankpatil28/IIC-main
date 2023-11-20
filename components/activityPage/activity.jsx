@@ -3,7 +3,7 @@ import ActivityCard from '../activity/activityCard'
 
 const Act = () => {
   return (
-    <section className='min-h-[90vh] h-auto w-full px-16 bg-gray-300'>
+    <section className='min-h-[90vh] h-auto w-full px-16 bg-gray-300' id='activity'>
         <div className='flex flex-col gap-2 items-center justify-between'>
             <div className='flex flex-col items-center gap-2'>
                 <h1 className='text-5xl font-bold text-black text-center px-2 py-3 border-b-2

@@ -3,7 +3,7 @@ import Card from '../cards/card'
 
 const About = () => {
   return (
-    <section className='min-h-[88vh] h-auto w-full px-16 py-4'>
+    <section className='min-h-[88vh] h-auto w-full px-16 py-4' id='about-us'>
       <div className='flex flex-col gap-2 items-center justify-between'>
         <div className='flex flex-col items-center gap-2'>
             <h1 className='text-5xl font-bold text-black text-center px-2 py-3 border-b-2

@@ -68,7 +68,7 @@ const ImageSlider = ({ slides }) => {
   };
 
   return (
-    <div style={sliderStyles} className="h-[75vh] w-full">
+    <div style={sliderStyles} className="h-[75vh] w-full  max-lg:h-[50vh] max-md:h-[40vh]" >
       <div>
         <div onClick={goToPrevious} style={leftArrowStyles}>
           ❰

@@ -24,25 +24,25 @@ const Navbar = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                 </label>
                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                    <li><Link href="#">Home</Link></li>
-                    <li><Link href="#">INNOTECH VENTURES</Link></li>
+                    <li><Link href="#home">Home</Link></li>
+                    <li><Link href="#activity">INNOTECH VENTURES</Link></li>
                     <li><Link href="#">INNOVATION'S COUNCIL</Link></li>
                     <li><Link href="#">GUIDELINES</Link></li>
-                    <li><Link href="#">CONTACT US</Link></li>
-                    <li><Link href="#">YUKTI PORTAL</Link></li>
-                    <li><Link href="#">SIH</Link></li>
+                    <li><Link href="#footer">CONTACT US</Link></li>
+                    <li><Link href="https://yukti.mic.gov.in/">YUKTI PORTAL</Link></li>
+                    <li><Link href="https://www.sih.gov.in/">SIH</Link></li>
                 </ul>
             </div>
         </div>
 
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-            <li><Link href="#">Home</Link></li>
+            <li><Link href="#home">Home</Link></li>
             <li tabIndex={0}>
                 <details>
                 <summary>InnoTech</summary>
                 <ul className="p-2 w-[185%]">
-                    <li><Link href="#">Innotech Ventures</Link></li>
+                    <li><Link href="#activity">Innotech Ventures</Link></li>
                     <li><Link href="#">Innovation's Counsils</Link></li>
                 </ul>
                 </details>
@@ -52,22 +52,25 @@ const Navbar = () => {
                 <details>
                 <summary>Portals</summary>
                 <ul className="p-2 w-[150%]">
-                    <li><Link href="#">Yukti Portal</Link></li>
-                    <li><Link href="#">SIH</Link></li>
+                    <li><Link href="https://yukti.mic.gov.in/">Yukti Portal</Link></li>
+                    <li><Link href="https://www.sih.gov.in/">SIH</Link></li>
                 </ul>
                 </details>
             </li>
             
-            <li><Link href="#">Contact Us</Link></li>
+            <li><Link href="#footer">Contact Us</Link></li>
             </ul>
         </div>
         
         <div className="navbar-end">
             <div className="indicator">
-                <button className="btn">
-                    <FaPlus />
-                    Login
-                </button>
+                <Link href='/admin'>
+                    <button className="btn">
+                        <FaPlus />
+                        Login
+                    </button>
+                </Link>
+                
             </div>
         </div>
     </section>

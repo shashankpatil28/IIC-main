@@ -4,7 +4,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube  } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <section className='footer w-full px-16 bg-gray-200'>
+    <section className='footer w-full px-16 bg-gray-200' id='footer'>
         <footer className="relative pt-8 pb-6 w-full">
         <div className="container mx-auto px-4">
             <div className="flex flex-wrap text-left lg:text-left">
@@ -45,20 +45,20 @@ const Footer = () => {
             <div className="w-full lg:w-6/12 px-4">
                 <div className="flex flex-wrap items-top mb-6">
                     <div className="w-full  px-4 ml-auto">
-                        <span className="block uppercase text-blueGray-500 text-lg font-semibold mb-4">
+                        <span className="block uppercase text-blueGray-500 text-2xl font-semibold mb-4">
                             Useful Links
                         </span>
                         <ul className="list-unstyled">
                             <li className='mb-2'>
                                 <button className="cta">
-                                    <Link href="">
+                                    <Link href="https://yukti.mic.gov.in/">
                                         <span className="hover-underline-animation">Yukti Portal</span>
                                     </Link>
                                 </button>
                             </li>
                             <li className='mb-2'>
                                 <button className="cta">
-                                    <Link href="">
+                                    <Link href="https://www.sih.gov.in/">
                                         <span className="hover-underline-animation">Smart India Hackathon</span>
                                     </Link>
                                 </button>
