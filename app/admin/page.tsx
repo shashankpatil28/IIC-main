@@ -1,5 +1,6 @@
 import React from 'react'
 import LoginSvg from '../../components/loginSvgSec/loginSvg'
+import Link from 'next/link'
 
 const Page = () => {
   return (
@@ -114,12 +115,15 @@ const Page = () => {
                     />
                 </div>
                 <div>
-                    <button
-                    type="submit"
-                    className="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black2 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
-                    >
-                    Login Now
-                    </button>
+                    <Link href="/admin/addEvent">
+                        <button
+                        type="submit"
+                        className="w-full bg-black text-white p-2 rounded-md hover:bg-gray-800 focus:outline-none focus:bg-black2 focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition-colors duration-300"
+                        >
+                        Login Now
+                        </button>
+                    </Link>
+                    
                 </div>
                 </form>
                 {/* <div className="mt-4 text-sm text-gray-600 text-center">

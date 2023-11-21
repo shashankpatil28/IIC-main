@@ -65,9 +65,9 @@ const Navbar = () => {
         <div className="navbar-end">
             <div className="indicator">
                 <Link href='/admin'>
-                    <button className="btn">
-                        <FaPlus />
-                        Login
+                    <button className="btn text-lg">
+                        <FaPlus className='text-xl'/>
+                        Admin
                     </button>
                 </Link>
                 
