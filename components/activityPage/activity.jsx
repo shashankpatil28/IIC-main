@@ -2,8 +2,22 @@ import React from 'react'
 import ActivityCard from '../activity/activityCard'
 
 const Act = () => {
+  const event = [
+    {
+      eventId : 1,
+      name : "event name",
+      desc : "Lorem ipsum dolor sit amet consectetur adipisicing eliQuod fugit omnis recusandae voluptatibus, accusamus totam a incidunt mollitia iure eos.",
+      date : "10.10.10"
+    },
+    {
+      eventId : 2,
+      name : "event name",
+      desc : "Lorem ipsum dolor sit amet consectetur adipisicing eliQuod fugit omnis recusandae voluptatibus, accusamus totam a incidunt mollitia iure eos.",
+      date : "10.10.10"
+    },
+  ]
   return (
-    <section className='min-h-[90vh] h-auto w-full px-16 bg-gray-300' id='activity'>
+    <section className='h-auto w-full px-16 bg-gray-300 py-10' id='activity'>
         <div className='flex flex-col gap-2 items-center justify-between'>
             <div className='flex flex-col items-center gap-2'>
                 <h1 className='text-5xl font-bold text-black text-center px-2 py-3 border-b-2
@@ -16,7 +30,7 @@ const Act = () => {
                 accusamus totam a incidunt mollitia iure eos.
                 </p>
             </div>
-            <ActivityCard />
+            <ActivityCard event={event}/>
         </div>
     </section>
   )

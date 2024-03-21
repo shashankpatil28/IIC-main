@@ -3,8 +3,9 @@ import HomePage from '../components/homePage/home'
 import Intro from '../components/introPage/intro'
 import About from '../components/AboutPage/about'
 import Footer from '../components/footer/footer'
+import Table from '../components/table/table'
+import Gallery from '../components/gallery/gallery'
 import Act from '../components/activityPage/activity'
-import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       <Navbar />
       <HomePage />
       <Intro />
-      <About />
+      {/* <About /> */}
+      <Table />
       <Act />
+      <Gallery />
       <Footer />
     </>
   )

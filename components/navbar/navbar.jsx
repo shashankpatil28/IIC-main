@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../public/iiclogo.png'
+import clglogo from '../../public/clglogo.png'
 import Image from 'next/image'
 import { FaPlus } from "react-icons/fa6";
 import Link from 'next/link';
@@ -8,13 +9,26 @@ import './navbar.css'
 const Navbar = () => {
   return (
     <section className="navbar bg-gray-300 px-16 min-h-[10vh] sticky top-0 left-0 z-10 shadow-lg">
-        <div className="navbar-start">
+        <div className="navbar-start gap-2">
            <Image 
                 height={"80px"}
                 width={"200px"}
                 src={logo}
                 className='h-[4rem] w-36'
            />
+           <div className='flex justify-center items-center gap-1'>
+            <Image 
+                src={clglogo}
+                width={50}
+                height={50}
+                className='h-[16%] w-[90%]'
+            />
+            <div >
+                <p className='font-semibold'>IIIT</p>
+                <p className='font-semibold'>Allahabad</p>
+            </div>
+           </div>
+           
         </div>
 
         {/* media query navbar  */}
@@ -48,6 +62,7 @@ const Navbar = () => {
                 </details>
             </li>
             <li><Link href="#">Guidlines</Link></li>
+            <li><Link href="#members">Members</Link></li>
             <li tabIndex={1}>
                 <details>
                 <summary>Portals</summary>
@@ -61,7 +76,7 @@ const Navbar = () => {
             <li><Link href="#footer">Contact Us</Link></li>
             </ul>
         </div>
-        
+{/*         
         <div className="navbar-end">
             <div className="indicator">
                 <Link href='/admin'>
@@ -72,7 +87,7 @@ const Navbar = () => {
                 </Link>
                 
             </div>
-        </div>
+        </div> */}
     </section>
   )
 }

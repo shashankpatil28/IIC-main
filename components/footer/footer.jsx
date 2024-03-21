@@ -65,15 +65,24 @@ const Footer = () => {
                             </li>
                             <li className='mb-2'>
                                 <button className="cta">
-                                    <Link href="#about-us">
-                                        <span className="hover-underline-animation">Our Events</span>
+                                    <Link href="https://nisp.mic.gov.in/">
+                                        <span className="hover-underline-animation">NISP</span>
                                     </Link>
-                                    
                                 </button>
                             </li>
                             <li className='mb-2'>
                                 <button className="cta">
-                                    <span className="hover-underline-animation"> Contact us</span>
+                                    <Link href="https://mic.gov.in/">
+                                        <span className="hover-underline-animation">MOE's Innovation cell</span>
+                                    </Link>
+                                </button>
+                            </li>
+                            <li className='mb-2'>
+                                <button className="cta">
+                                    <Link href="https://www.ariia.gov.in/">
+                                        <span className="hover-underline-animation">NIRF Innovation</span>
+                                    </Link>
+                                    
                                 </button>
                             </li>
                         </ul>
@@ -97,7 +106,7 @@ const Footer = () => {
                         href="https://www.creative-tim.com?ref=njs-profile"
                         className="text-blueGray-500 hover:text-blueGray-800"
                     >
-                        Creative Team
+                        Web Team
                     </a>
                     .
                     </div>
