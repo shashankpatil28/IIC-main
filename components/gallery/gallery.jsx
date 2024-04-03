@@ -1,17 +1,22 @@
-import React from 'react';
+"use client"
+
+import {motion} from "framer-motion"
+import gal1 from "../../public/pictures/gallery1.jpg"
+// import gal2 from "../../public/pictures/gallery2.jpg"
+import gal3 from "../../public/pictures/gallery3.jpeg"
+import gal4 from "../../public/pictures/gallery4.jpg"
+import gal5 from "../../public/pictures/gallery5.jpg"
+import gal6 from "../../public/pictures/gallery6.jpg"
+import gal7 from "../../public/pictures/gallery7.jpg"
+import gal8 from "../../public/pictures/gallery8.jpg"
+import gal9 from "../../public/pictures/gallery9.jpg"
+import gal10 from "../../public/pictures/gallery10.jpg"
+import Image from "next/image"
+
 
 const RandomImageGallery = () => {
   const imageLinks = [
-    "https://picsum.photos/id/1019/200/300",
-    "https://picsum.photos/id/1020/200/300",
-    "https://picsum.photos/id/1021/200/300",
-    "https://picsum.photos/id/1022/200/300",
-    "https://picsum.photos/id/1023/200/300",
-    "https://picsum.photos/id/1024/200/300",
-    "https://picsum.photos/id/1025/200/300",
-    "https://picsum.photos/id/1026/200/300",
-    "https://picsum.photos/id/1027/200/300",
-    "https://picsum.photos/id/1028/200/300"
+    gal1, gal3, gal4, gal5, gal6, gal7, gal8, gal9, gal10
   ];
 
   return (
@@ -23,9 +28,21 @@ const RandomImageGallery = () => {
         </div>
         <div className="flex flex-wrap justify-center gap-8">
             {imageLinks.map((link, index) => (
-                <div key={index} className="max-w-xs hover:scale-125">
-                <img src={link} alt={`Random Image ${index + 1}`} className="w-full h-auto rounded-lg shadow-md" />
-                </div>
+                
+                <motion.div 
+                  key={index} 
+                  className="max-w-xs hover:scale-110 transition duration-300"
+                  initial={{opacity:0}}
+                  whileInView={{opacity:1}}
+                  transition={{duration:1.2}}
+                  viewport={{once:1}}
+                >
+                  <Image 
+                    objectFit="cover"
+                    src={link}
+                    alt="image"
+                  />
+                </motion.div>
             ))}
         </div>
     </div>

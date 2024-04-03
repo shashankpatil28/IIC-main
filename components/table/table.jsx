@@ -50,25 +50,19 @@ function Table() {
         {
             personId : 8,
             designation : "ARIIA Coordinator",
-            name : "to be added",
+            name : "Dr.Shiv Ram Dubey",
             position : "dean"
         },
         {
             personId : 9,
             designation : "NIRF Coordinator",
-            name : "to be added",
+            name : "Dr.Shiv Ram Dubey",
             position : "dean"
         },
         {
             personId : 10,
-            designation : "Member",
-            name : "to be added",
-            position : "dean"
-        },
-        {
-            personId : 11,
-            designation : "Secretory",
-            name : "Assistant Registrar",
+            designation : "Overall Student Cordinator",
+            name : "Pankaj Kumar",
             position : "dean"
         },
     ];

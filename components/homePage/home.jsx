@@ -40,6 +40,7 @@ const Home = () => {
           transition={{ duration: 0.8, staggerChildren: 0.8}}
           viewport={{once:1}}>
           <Corousel />
+          
         </motion.div>
       </div>     
     </section>

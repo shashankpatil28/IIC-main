@@ -2,8 +2,10 @@
 
 import React from 'react'
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
 const ActivityCard = (props) => {
+
   return (
     <>
     <motion.div className="container mx-auto w-full h-full">
@@ -15,19 +17,22 @@ const ActivityCard = (props) => {
             {
                 props.event.map((ele) => (
                     <motion.div key={ele.eventId} className={ele.eventId % 2 == 0 ? "mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline" : "mb-8 flex justify-between items-center w-full left-timeline"}
-                    initial={ ele.eventId % 2 == 0 ? { x:'-10vw', opacity:0} :  { x:'10vw', opacity:0}}
+                    initial={ ele.eventId % 2 == 0 ? { x:'-10vw', opacity:0 } :  { x:'10vw', opacity:0 }}
                     whileInView={{opacity:1,  x:'0'}}
                     transition={{ duration: 2}}
                     viewport={{once:1}}
                     >
                         <div className="order-1 w-5/12">
-                            <img src="https://picsum.photos/id/1024/600/300" alt="eventPic" className='rounded-lg mb-2'/>
+                            <Image 
+                                src={ele.url}
+                                objectFit='cover'                           
+                            />
                         </div>
                         <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
                             <h1 className="mx-auto font-semibold text-lg text-white">{ele.eventId}</h1>
                         </div>
-                        <div className="order-1 bg-blue-100 rounded-lg shadow-xl w-5/12 px-6 py-4 md:min-h-[30vh] flex flex-col justify-between">
-                            <div className='py-4'>
+                        <div className="order-1 bg-blue-100 rounded-lg shadow-xl w-5/12 px-6 py-4 md:min-h-fit flex flex-col justify-between">
+                            <div className='py-4 flex flex-col'>
                                 <h3 className="mb-2 font-bold text-gray-800 text-2xl text-start">{ele.name}</h3>
                                 <p className="text-lg leading-snug tracking-tight text-gray-900 text-opacity-100 ">
                                     {ele.desc}
