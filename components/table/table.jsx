@@ -7,7 +7,7 @@ function Table() {
     const data = [
         {
             personId : 1,
-            designation : "president",
+            designation : "President",
             name : "Dean (R&D)",
             position : "dean"
         },
@@ -20,43 +20,43 @@ function Table() {
         {
             personId : 3,
             designation : "Innovation Activity Coordinator",
-            name : "Dr.T.Pant",
+            name : "Dr. T. Pant",
             position : "dean"
         },
         {
             personId : 4,
             designation : "Start-Up Activity Coordinator",
-            name : "Dr.Pragya Singh",
+            name : "Dr. Pragya Singh",
             position : "dean"
         },
         {
             personId : 5,
             designation : "Internship Coordinator",
-            name : "Dr.Rekha Verma",
+            name : "Dr. Rekha Verma",
             position : "dean"
         },
         {
             personId : 6,
             designation : "IPR Activity Coordinator",
-            name : "Dr.Prasanna Kumar Mishra",
+            name : "Dr. Prasanna Kumar Mishra",
             position : "dean"
         },
         {
             personId : 7,
             designation : "Social Media Coordinator",
-            name : "Dr.Srijit Bhattacharjee",
+            name : "Dr. Srijit Bhattacharjee",
             position : "dean"
         },
         {
             personId : 8,
             designation : "ARIIA Coordinator",
-            name : "Dr.Shiv Ram Dubey",
+            name : "Dr. Shiv Ram Dubey",
             position : "dean"
         },
         {
             personId : 9,
             designation : "NIRF Coordinator",
-            name : "Dr.Shiv Ram Dubey",
+            name : "Dr. Shiv Ram Dubey",
             position : "dean"
         },
         {

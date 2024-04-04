@@ -5,20 +5,21 @@ import event2 from "../../public/pictures/event2.jpg"
 
 const Act = () => {
   const event = [
+    
     {
       eventId : 1,
-      name : "Advance Entrepreneurship and skill Development Program",
-      desc : "Capacity building through data-driven technologies is vital for shaping the entrepreneurs of the future. In an ever-changing business landscape, such tools empower entrepreneurs to make informed decisions, identify emerging trends, and adapt swiftly to market dynamics. By harnessing data analytics, entrepreneurs gain valuable insights into consumer behavior, industry trends, and competitive landscapes, enabling them to innovate effectively. ",
-      date : "Feb 12-16, 2024",
-      url : event1
+      name : "Workshop on Intellectual Property Rights and Innovation",
+      desc : "The training program covered details on intellectual property rights, copyrights, patents, etc. The participants could learn the technology translation procedures of making patents related to the US and other motivations for creating start-up. The focus of the training program was on intellectual property rights, patents related to India and other countries, the supporting platform, and required exposure.   ",
+      date : "Dec 2, 2023",
+      url : event2
     },
     {
       eventId : 2,
       name : "Advance Entrepreneurship and skill Development Program",
       desc : "Capacity building through data-driven technologies is vital for shaping the entrepreneurs of the future. In an ever-changing business landscape, such tools empower entrepreneurs to make informed decisions, identify emerging trends, and adapt swiftly to market dynamics. By harnessing data analytics, entrepreneurs gain valuable insights into consumer behavior, industry trends, and competitive landscapes, enabling them to innovate effectively. ",
       date : "Feb 12-16, 2024",
-      url : event2
-    },
+      url : event1
+    }
   ]
   return (
     <section className='h-auto w-full px-16 bg-gray-300 py-10' id='activity'>

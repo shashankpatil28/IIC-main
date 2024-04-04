@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
             <li><Link href="#home">Home</Link></li>
-            <li tabIndex={0}>
+            {/* <li tabIndex={0}>
                 <details>
                 <summary>InnoTech</summary>
                 <ul className="p-2 w-[185%]">
@@ -60,8 +60,8 @@ const Navbar = () => {
                     <li><Link href="#">Innovation's Counsils</Link></li>
                 </ul>
                 </details>
-            </li>
-            <li><Link href="#">Guidlines</Link></li>
+            </li> */}
+            <li><Link href="#">Guidelines</Link></li>
             <li><Link href="#members">Members</Link></li>
             <li tabIndex={1}>
                 <details>
