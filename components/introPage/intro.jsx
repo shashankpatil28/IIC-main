@@ -40,7 +40,7 @@ const Intro = () => {
             transition={{duration:0.9}}
             viewport={{once:1}}>
             <span className='h-full border-b-2 border-black py-[5px]'>
-                INTRODUCTION
+                ABOUT
             </span>
         </motion.div>
 
@@ -98,7 +98,7 @@ const Intro = () => {
                 </div>
                 <div className='flex-1 my-auto gap-y-2'>
                     <div className='text-3xl font-semibold mb-2 '>
-                        <p className='border-b-black border-b-[3px] border-opacity-50 py-2 w-fit px-1'>Activities</p>
+                        <p className='border-b-black border-b-[3px] border-opacity-50 py-2 w-fit px-1'>Objectives</p>
                     </div>
                     {bullet.map((b, i) => {
                         return (
