@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
+import MoeImg from "../../public/MIC-Big.png"
+import Image from "next/image"
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube  } from "react-icons/fa";
 
 const Footer = () => {
@@ -20,19 +22,19 @@ const Footer = () => {
                     className="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"
                 >
-                    <Link href='twitter.com'  className='flex justify-center items-center'><FaTwitter className='text-2xl'/></Link>
+                    <Link href='https://twitter.com/IIC_IIITA'  className='flex justify-center items-center'><FaTwitter className='text-2xl'/></Link>
                 </button>
                 <button
                     className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"
                 >
-                    <Link href='facebook.com' className='flex justify-center items-center'><FaFacebook className='text-2xl'/></Link>
+                    <Link href='https://www.facebook.com/iiciiita/' className='flex justify-center items-center'><FaFacebook className='text-2xl'/></Link>
                 </button>
                 <button
                     className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                     type="button"
                 >
-                    <Link href='twitter.com'  className='flex justify-center items-center'><FaInstagram className='text-2xl'/></Link>
+                    <Link href='https://www.instagram.com/iic_iiit_allahabad/?igsh=Z2ljYWFvc3VpY2Z3'  className='flex justify-center items-center'><FaInstagram className='text-2xl'/></Link>
                 </button>
                 <button
                     className="bg-white text-red-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
@@ -40,6 +42,16 @@ const Footer = () => {
                 >
                    <Link href='twitter.com'  className='flex justify-center items-center'><FaYoutube className='text-2xl'/></Link>
                 </button>
+                </div>
+                <div className='mt-4'>
+                    <a href="https://mic.gov.in/">
+                        <Image 
+                            objectFit='cover'
+                            src={MoeImg}
+
+                        />
+                    </a>
+                   
                 </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
@@ -91,7 +103,7 @@ const Footer = () => {
                 </div>
             </div>
             </div>
-            <hr className=" border-gray-400" />'
+            <hr className=" border-gray-400 mt-4" />'
             <div className="flex flex-wrap items-center md:justify-between justify-center">
                 <div className="w-full md:w-4/12 px-2 mx-auto text-center">
                     <div className="text-sm text-blueGray-500 font-semibold py-1">
