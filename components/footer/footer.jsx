@@ -113,12 +113,12 @@ const Footer = () => {
                         className="text-blueGray-500 hover:text-gray-800"
                         target="_blank"
                     />{" "}
-                    IIITA
+                    IIC- 
                     <a
                         href="https://www.creative-tim.com?ref=njs-profile"
                         className="text-blueGray-500 hover:text-blueGray-800"
                     >
-                        Web Team
+                        WebTeam
                     </a>
                     .
                     </div>
