@@ -9,6 +9,15 @@ function Table() {
 
   return (
     <section className="antialiased h-auto px-[10%] py-8 bg-white" id="members">
+       <motion.div className='text-5xl w-full font-bold text-black text-center px-2 py-3 max-lg:text-3xl mx-md:p-[4px] mx-auto max-md:text-xl mb-4'
+            initial={{opacity:0}}
+            whileInView={{opacity:1}}
+            transition={{duration:0.9}}
+            viewport={{once:1}}>
+            <span className='h-full border-b-2 border-black py-[5px]'>
+                Members
+            </span>
+        </motion.div>
       <div className="flex flex-col justify-center h-full">
         <div className="flex justify-center gap-4 mb-6">
           <button

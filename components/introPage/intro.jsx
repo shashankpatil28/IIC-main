@@ -40,7 +40,7 @@ const Intro = () => {
             transition={{duration:0.9}}
             viewport={{once:1}}>
             <span className='h-full border-b-2 border-black py-[5px]'>
-                ABOUT
+                About
             </span>
         </motion.div>
 

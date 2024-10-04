@@ -109,13 +109,11 @@ const Footer = () => {
                     <div className="text-sm text-blueGray-500 font-semibold py-1">
                     Copyright © <span id="get-current-year" className='text-black'>2023</span>
                     <a
-                        href="https://www.creative-tim.com/product/notus-js"
                         className="text-blueGray-500 hover:text-gray-800"
                         target="_blank"
                     />{" "}
                     IIC- 
                     <a
-                        href="https://www.creative-tim.com?ref=njs-profile"
                         className="text-blueGray-500 hover:text-blueGray-800"
                     >
                         WebTeam
