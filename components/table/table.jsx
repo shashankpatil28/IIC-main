@@ -8,7 +8,7 @@ function Table() {
   const [activeTab, setActiveTab] = useState("boardMembers");
 
   return (
-    <section className="antialiased h-auto px-[10%] py-8 bg-white" id="members">
+    <section className="antialiased h-auto px-4 md:px-[10%] py-8 bg-white" id="members">
        <motion.div className='text-5xl w-full font-bold text-black text-center px-2 py-3 max-lg:text-3xl mx-md:p-[4px] mx-auto max-md:text-xl mb-4'
             initial={{opacity:0}}
             whileInView={{opacity:1}}
@@ -54,7 +54,7 @@ function Table() {
               {activeTab === "boardMembers" ? (
                 <table className="table-auto w-full">
                   <thead className="text-lg font-semibold uppercase text-gray-600 bg-blue-200">
-                    <tr>
+                    <tr className="text-md">
                       <th className="p-2 whitespace-nowrap">
                         <div className="font-semibold text-left">SR No.</div>
                       </th>
@@ -71,7 +71,7 @@ function Table() {
                       <motion.tr
                         key={ele.personId}
                         className={
-                          ele.personId % 2 === 0 ? "bg-blue-50" : "bg-white"
+                          ele.personId % 2 === 0 ? "bg-blue-50 text-[15px]" : "bg-white text-[15px]"
                         }
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -100,7 +100,7 @@ function Table() {
               ) : (
                 <table className="table-auto w-full">
                   <thead className="text-lg font-semibold uppercase text-gray-600 bg-green-200">
-                    <tr>
+                    <tr className="text-md">
                       <th className="p-2 whitespace-nowrap">
                         <div className="font-semibold text-left">SR No.</div>
                       </th>
@@ -117,7 +117,7 @@ function Table() {
                       </th>
                     </tr>
                   </thead>
-                  <tbody className="text-lg divide-y divide-gray-100">
+                  <tbody className="text-[15px] divide-y divide-gray-100">
                     {normalMember.map((ele) => (
                       <motion.tr
                         key={ele.personId}

@@ -53,7 +53,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <section className="navbar bg-gray-300 px-16 min-h-[10vh] sticky top-0 left-0 z-10 shadow-lg">
+    <section className="navbar bg-gray-300 px-6 md:px-16 min-h-[10vh] sticky top-0 left-0 z-10 shadow-lg">
       <div className="navbar-start gap-2">
         <a href="https://iic.mic.gov.in">
           <Image
@@ -69,9 +69,9 @@ const Navbar = () => {
             src={clglogo}
             width={50}
             height={50}
-            className='h-[16%] w-[90%]'
+            className='h-[16%] w-[100%]'
           />
-          <div>
+          <div className='max-md:hidden'>
             <p className='font-semibold'>IIIT</p>
             <p className='font-semibold'>Allahabad</p>
           </div>
@@ -97,20 +97,20 @@ const Navbar = () => {
             <p className='absolute top-8 left-4 text-2xl font-bold ml-1'>
                 IIC IIITA
             </p>
-            <ul className="space-y-2 relative top-16 right-2"  onClick={() => setDrawerOpen(false)} >
-                <li className='border-2 px-2 py-1 rounded-md'><Link href="#home">Home</Link></li>
-                <li className='border-2 px-2 py-1 rounded-md'><Link href="#">Guidelines</Link></li>
-                <li className='border-2 px-2 py-1 rounded-md'><Link href="#members">Members</Link></li>
+            <ul className="space-y-2 relative top-16 right-2"  >
+                <li className='border-2 px-2 py-1 rounded-md'  onClick={() => setDrawerOpen(false)}><Link href="#home">Home</Link></li>
+                <li className='border-2 px-2 py-1 rounded-md'  onClick={() => setDrawerOpen(false)}><Link href="#">Guidelines</Link></li>
+                <li className='border-2 px-2 py-1 rounded-md'  onClick={() => setDrawerOpen(false)}><Link href="#members">Members</Link></li>
                 <li className='border-2 px-2 py-1 rounded-md'>
                     <details open={isDropdownOpen} onClick={() => setDropdownOpen(!isDropdownOpen)}>
                     <summary>Portals</summary>
                     <ul className="p-2 w-[100%]">
-                        <li className='border-2 px-2 py-1 rounded-md'><Link href="https://yukti.mic.gov.in/">Yukti Portal</Link></li>
-                        <li className='border-2 px-2 py-1 rounded-md'><Link href="https://www.sih.gov.in/">SIH</Link></li>
+                        <li className='border-2 px-2 py-1 rounded-md'><Link href="https://yukti.mic.gov.in/"  onClick={() => setDrawerOpen(false)}>Yukti Portal</Link></li>
+                        <li className='border-2 px-2 py-1 rounded-md'><Link href="https://www.sih.gov.in/"  onClick={() => setDrawerOpen(false)}>SIH</Link></li>
                     </ul>
                     </details>
                 </li >
-                <li className='border-2 px-2 py-1 rounded-md'><Link href="#footer">Contact Us</Link></li>
+                <li className='border-2 px-2 py-1 rounded-md'><Link href="#footer"  onClick={() => setDrawerOpen(false)}>Contact Us</Link></li>
             </ul>
           </div>
         </div>

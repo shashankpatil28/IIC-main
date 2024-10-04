@@ -20,7 +20,7 @@ const RandomImageGallery = () => {
   ];
 
   return (
-    <div className='h-auto w-full px-24 my-10'>
+    <div className='h-auto w-full px-6 md:px-24 my-10'>
         <div className='text-5xl w-full font-bold text-black text-center px-2 py-3 max-lg:text-3xl mx-md:p-[4px] mx-auto max-md:text-xl mb-8'>
             <span className='h-full border-b-2 border-black py-[5px]'>
                 Gallery
