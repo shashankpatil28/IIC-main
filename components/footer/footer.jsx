@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import MoeImg from "../../public/MIC-Big.png";
 import Image from "next/image";
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaMailBulk } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -18,6 +18,17 @@ const Footer = () => {
                 through Social Media
               </h5>
               <div className="mt-6 lg:mb-0 mb-6 max-md:relative max-md:bottom-3 max-md:right-1">
+                <button
+                  className="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                  type="button"
+                >
+                  <Link
+                    href="mailto:iic_coordinator@iiita.ac.in"
+                    className="flex justify-center items-center"
+                  >
+                    <FaMailBulk className="text-2xl text-sky-500" />
+                  </Link>
+                </button>
                 <button
                   className="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"

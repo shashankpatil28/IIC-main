@@ -79,7 +79,7 @@ function Table() {
                         viewport={{ once: 1 }}
                       >
                         <td className="p-2 whitespace-nowrap">
-                          <div className="text-left">{ele.personId}</div>
+                          <div className="text-left">{ele.personId + 1}</div>
                         </td>
                         <td className="p-2 whitespace-nowrap">
                           <div className="flex items-center">

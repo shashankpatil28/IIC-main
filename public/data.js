@@ -1,5 +1,11 @@
 const boardMember = [
     {
+      personId : 0,
+      designation : "Advisor",
+      name : "Director, IIITA",
+      position : "dean"
+    },
+    {
         personId : 1,
         designation : "President",
         name : "Dean (R&D)",
