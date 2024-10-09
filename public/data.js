@@ -70,7 +70,7 @@ const boardMember = [
 const normalMember = [
     {
       personId: 0,
-      name: "Kantab Khanam",
+      name: "Zartab Khanam",
       rollNo: "RSS2022508",
       contact: "9540514800",
       designation: "Member"

@@ -14,10 +14,16 @@ const Footer = () => {
               <h4 className="text-3xl fonat-semibold text-blueGray-700 mb-1">
                 Connect With Us
               </h4>
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-                through Social Media
+                <h5 className="text-lg mt-0 text-blueGray-600 flex gap-2 flex-wrap">
+                  <p>
+                    Mail : 
+                  </p>
+                  <Link href="mailto:iic_coordinator@iiita.ac.in" className="text-md text-slate-600"> iic_coordinator@iiita.ac.in </Link>
+                </h5>
+              <h5 className="text-lg mt-0 text-blueGray-600">
+                Social Media :
               </h5>
-              <div className="mt-6 lg:mb-0 mb-6 max-md:relative max-md:bottom-3 max-md:right-1">
+              <div className="mt-2 lg:mb-0 mb-6 max-md:mt-4 max-md:relative max-md:bottom-3 max-md:right-1">
                 <button
                   className="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                   type="button"
