@@ -1,4 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+    // Other configurations...
+    images: {
+      domains: ['iic.iiita.ac.in'],
+    },
+  };
+  

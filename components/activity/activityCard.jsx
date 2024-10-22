@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react'
 import { motion } from "framer-motion"
 import Image from 'next/image'
 
-import event1 from "../../public/pictures/event1.jpg"
-import event2 from "../../public/pictures/event2.jpg"
+import event1 from "../../public/images/event1.jpg"
+import event2 from "../../public/images/event2.jpg"
 
 const ActivityCard = () => {
 

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import MoeImg from "../../public/MIC-Big.png";
+import MoeImg from "../../public/images/MIC-Big.png";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaMailBulk } from "react-icons/fa";
 

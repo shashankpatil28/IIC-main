@@ -3,7 +3,7 @@
 import React from 'react'
 import Corousel from '../corousel/corousel'
 import Image from 'next/image'
-import clglogo from '../../public/clglogo.png'
+import clglogo from '../../public/images/clglogo.png'
 import Link from 'next/link'
 import {motion} from 'framer-motion'
 

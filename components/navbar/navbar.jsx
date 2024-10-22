@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import logo from '../../public/iiclogo.png';
-import clglogo from '../../public/clglogo.png';
+import logo from '../../public/images/iiclogo.png';
+import clglogo from '../../public/images/clglogo.png';
 import Image from 'next/image';
 import { FaPlus, FaTimes } from "react-icons/fa";
 import Link from 'next/link';
