@@ -61,7 +61,7 @@ const boardMember = [
     },
     {
         personId : 10,
-        designation : "Overall Student Cordinator",
+        designation : "Strategy Incharge",
         name : "Pankaj Kumar",
         position : "dean"
     },

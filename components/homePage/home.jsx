@@ -29,7 +29,7 @@ const Home = () => {
               whileInView={{opacity:1,  y:'0'}}
               transition={{ duration: 0.2}}
               viewport={{once:1}}>
-              <h1 className='md:text-4xl text-3xl font-extrabold text-center text-black mb-2'>INSTITUTE's INNOVATION CELL</h1>
+              <h1 className='md:text-4xl text-3xl font-extrabold text-center text-black mb-2'>INSTITUTE INNOVATION COUNCIL</h1>
               <p className='text-center  text-[22px] md:text-[26px] font-semibold'>Indian Institute of Information Technology, Allahabad</p>
             </motion.div>
             

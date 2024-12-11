@@ -131,6 +131,7 @@ const Navbar = () => {
               </ul>
             </details>
           </li>
+          <li><Link href="#iifi">IIFI</Link></li>
           <li><Link href="#footer">Contact Us</Link></li>
         </ul>
       </div>

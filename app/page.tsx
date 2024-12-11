@@ -5,6 +5,7 @@ import Footer from '../components/footer/footer'
 import Table from '../components/table/table'
 import Gallery from '../components/gallery/gallery'
 import Act from '../components/activityPage/activity'
+import Iifi from "../components/iifi/iifi"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Table />
       <Act />
       <Gallery />
+      <Iifi />
       <Footer />
     </>
   )
